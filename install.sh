@@ -2,12 +2,14 @@
 
 echo "Installing ROSUS..."
 
-if [ ! -d ./bin ];
-  ./build.sh
-  if [[ $? -ne 0 ]];
-    echo "Build failed! Abandoning install."
-    exit 1
-  fi
+if [ ! -d ./bin ]
+  then
+    ./build.sh
+    if [[ $? -ne 0 ]]
+      then
+        echo "Build failed! Abandoning install."
+        exit 1
+    fi
 fi
 
 sudo cp ./bin/google /bin/google
