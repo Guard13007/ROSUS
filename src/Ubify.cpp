@@ -5,10 +5,8 @@
 
 using namespace std;
 
-char replacementChar[12] = { 'a', 'e', 'i', 'o', 'u', 'y'};
-
+// forward declarations
 string ubify(string baseString);
-
 bool matches(char c);
 
 int main(int argc, char *argv[]) {
@@ -56,6 +54,7 @@ string ubify(string baseString) {
 }
 
 bool matches(char c) {
+    char replacementChar[12] = { 'a', 'e', 'i', 'o', 'u', 'y'};
 
     for (unsigned int i = 0; i < sizeof(replacementChar); i++) {
         if (tolower(c) == replacementChar[i]) {
