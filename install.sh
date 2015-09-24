@@ -2,6 +2,7 @@
 
 echo "Installing ROSUS..."
 
+#TODO add check so that it doesn't assume an empty directory means everything has been built
 if [ ! -d ./bin ]
   then
     ./build.sh
@@ -15,5 +16,6 @@ fi
 sudo cp ./bin/google /bin/google
 sudo cp ./bin/how /bin/how
 sudo cp ./bin/ubify /bin/ubify
+sudo cp ./bin/deubify /bin/deubify
 
 echo "ROSUS installed!"
