@@ -16,11 +16,15 @@ int main(int argc, char* argv[]) {
             srch = srch + argv[i];
             if (i != (argc - 1)) srch = srch + "+";
         }
-        string full = "if which xdg-open; then xdg-open " + google + srch + " &>/dev/null &!;" +
-                      "elif which kde-open; then kde-open " + google + srch + " &>/dev/null &!;" +
-                      "elif which gnome-open; then gnome-open " + google + srch + " &>/dev/null &!;" +
-                      "else echo 'Install xdg-open, kde-open, or gnome-open.';" +
-                      "fi;";
+        #ifdef _WIN32
+            string full = "start " + google + srch;
+        #else
+            string full = "if which xdg-open; then xdg-open " + google + srch + " &>/dev/null &!;" +
+                          "elif which kde-open; then kde-open " + google + srch + " &>/dev/null &!;" +
+                          "elif which gnome-open; then gnome-open " + google + srch + " &>/dev/null &!;" +
+                          "else echo 'Install xdg-open, kde-open, or gnome-open.';" +
+                          "fi;";
+        #endif
         char * cstr = new char [full.length() + 2];
         strcpy(cstr, full.c_str());
         system(cstr);
