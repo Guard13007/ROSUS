@@ -18,3 +18,19 @@ Repository Of Semi-Useful Stuff (simple terminal programs)
   Replaces all instances of "ub" in text with random vowels (including y).  
   As ubification is a lossy anti-compression, data is lost. DeUbifying text
   can lead to unexpected results. Enjoy.
+
+## Installation
+
+On Windows, use [Scoop](http://scoop.sh/) to install from Powershell:
+
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+
+scoop bucket add g-bucket https://github.com/Guard13007/ScoopBucket
+scoop install rosus
+```
+
+..or just download from releases..
+
+On Linux, use the `install.sh` script in here.
