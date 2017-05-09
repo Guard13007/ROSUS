@@ -10,6 +10,7 @@ if which g++;
     g++ ./src/How.cpp -o ./bin/how
     g++ ./src/Ubify.cpp -o ./bin/ubify
     g++ ./src/DeUbify.cpp -o ./bin/deubify
+    g++ ./src/Kerbify.cpp -o ./bin/kerbify
     if [ -f ./a.out ]
       then
         rm ./a.out

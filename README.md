@@ -18,6 +18,9 @@ Repository Of Semi-Useful Stuff (simple terminal programs)
   Replaces all instances of "ub" in text with random vowels (including y).  
   As ubification is a lossy anti-compression, data is lost. DeUbifying text
   can lead to unexpected results. Enjoy.
+- Kerbify.cpp
+  Replaces beginning letters of words with k (if they are a consonant). Because
+  Kerbal Space Program.
 
 ## Installation
 
