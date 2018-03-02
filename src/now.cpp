@@ -11,6 +11,6 @@ int main()
   time(&now);
   result = gmtime(&now);
 
-  cout << result << endl;
+  cout << mktime(result) << endl;
   return 0;
 }
