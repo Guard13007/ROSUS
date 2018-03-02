@@ -11,6 +11,7 @@ if which g++;
     g++ ./src/Ubify.cpp -o ./bin/ubify
     g++ ./src/DeUbify.cpp -o ./bin/deubify
     g++ ./src/Kerbify.cpp -o ./bin/kerbify
+    g++ ./src/now.cpp -o ./bin/now
     if [ -f ./a.out ]
       then
         rm ./a.out
