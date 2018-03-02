@@ -17,6 +17,7 @@ sudo cp ./bin/google /bin/google
 sudo cp ./bin/how /bin/how
 sudo cp ./bin/ubify /bin/ubify
 sudo cp ./bin/deubify /bin/deubify
-sudo co ./bin/kerbify /bin/kerbify
+sudo cp ./bin/kerbify /bin/kerbify
+sudo cp ./bin/now /bin/now
 
 echo "ROSUS installed!"
